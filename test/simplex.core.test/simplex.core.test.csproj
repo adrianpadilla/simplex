@@ -50,7 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Examples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\simplex.core\simplex.core.csproj">
+      <Project>{618b8a61-875e-4a99-b77e-4e8d92d75afc}</Project>
+      <Name>simplex.core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
