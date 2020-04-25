@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdrianPadilla.Net.Simplex.Core
+namespace Simplex
 {
     public class ExpressionBuilder
     {

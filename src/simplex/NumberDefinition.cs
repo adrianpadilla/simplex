@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdrianPadilla.Net.Simplex.Core
+namespace Simplex
 {
     public class NumberDefinition
     {

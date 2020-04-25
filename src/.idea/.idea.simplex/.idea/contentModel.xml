@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\code\simplex\src" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="simplex" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Concatenation.cs" t="Include" />
+        <e p="ConfigurationValidationDefinition.cs" t="Include" />
+        <e p="ConfigurationValidationExtensions.cs" t="Include" />
+        <e p="ExpressionBuilder.cs" t="Include" />
+        <e p="NumberDefinition.cs" t="Include" />
+        <e p="NumberOfDigitsToRestriction.cs" t="Include" />
+        <e p="NumericValidations.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.1" t="Include">
+              <e p="simplex.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ObjectValidationDefinition.cs" t="Include" />
+        <e p="ObjectValidationExtensions.cs" t="Include" />
+        <e p="simplex.csproj" t="IncludeRecursive" />
+        <e p="StringValidationDefinition.cs" t="Include" />
+        <e p="StringValidationExtensions.cs" t="Include" />
+        <e p="ValidationDefinition.cs" t="Include" />
+        <e p="WordDefinition.cs" t="Include" />
+      </e>
+      <e p="simplex.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Adrian\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Adrian\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Adrian\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_simplex.-1560370782.00" t="ExcludeRecursive" />
+  </component>
+</project>
