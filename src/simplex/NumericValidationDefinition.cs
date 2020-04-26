@@ -2,10 +2,14 @@
 
 namespace Simplex
 {
-    public static class NumericValidations
+    public class NumericValidationDefinition : ValidationDefinition<int>
     {
-        public static void ShouldBePositive(this int value, string message = null, string paramName = null)
+        private NumericValidationDefinition Builder { get; }
+
+        public void BePositive(string message = null, string paramName = null)
         {
+            var value = this.ValidatedSpecimen;
+
             if (value >= 1) return;
 
             string customMessage = null;
@@ -25,8 +29,11 @@ namespace Simplex
             }
             throw new ArgumentException(customMessage, paramName);
         }
-        public static void ShouldBeNonNegative(this int value, string message = null, string paramName = null)
+
+        public void BeNonNegative(string message = null, string paramName = null)
         {
+            var value = ValidatedSpecimen;
+
             if (value >= 0) return;
 
             string customMessage = null;
@@ -47,8 +54,10 @@ namespace Simplex
             throw new ArgumentException(customMessage, paramName);
         }
 
-        public static void ShouldBeNonZero(this int value, string message = null, string paramName = null)
+        public void BeNonZero(string message = null, string paramName = null)
         {
+            var value = this.ValidatedSpecimen;
+
             if (value != 0) return;
 
             string customMessage = null;
@@ -67,6 +76,16 @@ namespace Simplex
                 customMessage = $"The argument {paramName}should be other than zero.";
             }
             throw new ArgumentException(customMessage, paramName);
+        }
+
+        public NumericValidationDefinition(int validatedObject) : base(validatedObject)
+        {
+            Builder = this;
+        }
+
+        public NumericValidationDefinition(NumericValidationDefinition builder):base(builder.ValidatedSpecimen)
+        {
+            Builder = builder;
         }
     }
 }

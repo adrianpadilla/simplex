@@ -6,7 +6,7 @@ namespace Simplex
 {
     public static class ObjectValidationExtensions
     {
-        public static ObjectValidationDefinition ShouldBe(this object @object)
+        public static ObjectValidationDefinition Must(this object @object)
         {
             return new ObjectValidationDefinition(@object);
         }

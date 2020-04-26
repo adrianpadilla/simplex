@@ -19,7 +19,7 @@ namespace Simplex
 
 
 
-        public Concatenation<ObjectValidationDefinition> NotNull()
+        public Concatenation<ObjectValidationDefinition> NotBeNull()
         {
             if (Builder.ValidatedSpecimen == null)
             {
